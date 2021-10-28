@@ -1,0 +1,2 @@
+The Statistics Finland corpus provided as experiments/statfi/statfi_en.txt is licensed under the CC BY 4.0 license, which can be viewed at https://creativecommons.org/licenses/by/4.0/deed.en
+The corpus is based on a crawl of the Statistics Finland website conducted on 20 Mar 2019.
