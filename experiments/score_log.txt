@@ -1,0 +1,325 @@
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210423_0959_ptr+LSTM_en:
+Losses: inf
+PMR: 22.45
+PAcc: 30.71
+tau: -13.88
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210423_0959_ptr+LSTM_en:
+Losses: inf
+PMR: 26.53
+PAcc: 31.88
+tau: -4.74
+--- Mean + std / epoch over folds: ---
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210423_1100_ptr+LSTM_en:
+Losses: inf
+PMR: 22.45
+PAcc: 30.71
+tau: -13.88
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210423_1100_ptr+LSTM_en:
+Losses: inf
+PMR: 26.53
+PAcc: 31.88
+tau: -4.74
+--- Mean + std / epoch over folds: ---
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210423_1201_ptr+LSTM_en:
+Losses: inf
+PMR: 22.45
+PAcc: 30.71
+tau: -13.88
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210423_1201_ptr+LSTM_en:
+Losses: inf
+PMR: 26.53
+PAcc: 31.88
+tau: -4.74
+--- Mean + std / epoch over folds: ---
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210423_1218_ptr+LSTM_en:
+Losses: inf
+PMR: 22.45
+PAcc: 30.71
+tau: -13.88
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210423_1218_ptr+LSTM_en:
+Losses: inf
+PMR: 26.53
+PAcc: 31.88
+tau: -4.74
+--- Mean + std / epoch over folds: ---
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210423_1428_ptr+LSTM_en:
+Losses: inf
+PMR: 22.45
+PAcc: 30.71
+tau: -13.88
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210423_1428_ptr+LSTM_en:
+Losses: inf
+PMR: 26.53
+PAcc: 31.88
+tau: -4.74
+--- Mean + std / epoch over folds: ---
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210510_1547_pos+LSTM_en:
+Losses: 23.5622
+PMR: 42.86
+PAcc: 45.00
+tau: 26.39
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210510_1547_pos+LSTM_en:
+Losses: 24.7693
+PMR: 42.86
+PAcc: 47.83
+tau: 27.00
+--- Mean + std / epoch over folds: ---
+Losses: m-[24.1658], std-[0.6036]
+PMRs: m-[42.86], std-[0.00]
+PAccs: m-[46.41], std-[1.41]
+taus: m-[26.70], std-[0.30]
+
+#####
+
+
+#####
+
+Scores for model: 20210511_1908_pos+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210511_1908_pos+LSTM_en:
+Losses: 2.1547
+
+
+#####
+
+Scores for model: 20210512_0857_pos+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210512_0857_pos+LSTM_en:
+Losses: 2.1547
+Precisions: 18.93
+Recalls: 43.51
+F1-s: 26.38
+Accuracies: 43.51
+
+
+#####
+
+Scores for model: 20210512_0857_pos+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210512_0857_pos+LSTM_en:
+Losses: 2.2156
+Precisions: 29.17
+Recalls: 26.11
+F1-s: 16.67
+Accuracies: 26.11
+--- Mean + std / epoch over folds: ---
+Losses: m-[2.1852], std-[0.0305]
+Precs: m-[24.05], std-[5.12]
+Recs: m-[34.81], std-[8.70]
+F1-s: m-[21.53], std-[4.85]
+Accs: m-[34.81], std-[8.70]
+
+#####
+
+
+#####
+
+Scores for model: 20210512_1117_pos+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210512_1117_pos+LSTM_en:
+Losses: 24.5947
+PMR: 36.73
+PAcc: 37.14
+tau: 22.18
+
+
+#####
+
+Scores for model: 20210512_1117_pos+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210512_1117_pos+LSTM_en:
+Losses: 25.2662
+PMR: 42.86
+PAcc: 49.28
+tau: 29.81
+--- Mean + std / epoch over folds: ---
+Losses: m-[24.9305], std-[0.3357]
+PMRs: m-[39.80], std-[3.06]
+PAccs: m-[43.21], std-[6.07]
+taus: m-[25.99], std-[3.81]
+
+#####
+
+
+#####
+
+Scores for model: 20210515_2349_ptr+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210515_2349_ptr+LSTM_en:
+Losses: 17.6091
+PMR: 48.98
+PAcc: 49.29
+tau: 35.92
+
+
+#####
+
+Scores for model: 20210515_2349_ptr+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210515_2349_ptr+LSTM_en:
+Losses: 17.7683
+PMR: 34.69
+PAcc: 37.68
+tau: 5.87
+--- Mean + std / epoch over folds: ---
+Losses: m-[17.6887], std-[0.0796]
+PMRs: m-[41.84], std-[7.14]
+PAccs: m-[43.48], std-[5.80]
+taus: m-[20.89], std-[15.02]
+
+#####
+
+
+#####
+
+Scores for model: 20210516_0112_ptr+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210516_0112_ptr+LSTM_en:
+Losses: 20.0331
+PMR: 40.82
+PAcc: 44.29
+tau: 27.07
+
+
+#####
+
+Scores for model: 20210516_0112_ptr+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210516_0112_ptr+LSTM_en:
+Losses: 19.8206
+PMR: 36.73
+PAcc: 41.30
+tau: 13.65
+--- Mean + std / epoch over folds: ---
+Losses: m-[19.9268], std-[0.1062]
+PMRs: m-[38.78], std-[2.04]
+PAccs: m-[42.80], std-[1.49]
+taus: m-[20.36], std-[6.71]
+
+#####
+
+
+#####
+
+Scores for model: 20210516_1615_pw+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210516_1615_pw+LSTM_en:
+Losses: 0.0000
+PMR: 36.73
+PAcc: 40.71
+tau: 7.48
+
+
+#####
+
+Scores for model: 20210516_1615_pw+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210516_1615_pw+LSTM_en:
+Losses: 0.0000
+PMR: 26.53
+PAcc: 28.26
+tau: -22.37
+--- Mean + std / epoch over folds: ---
+Losses: m-[0.0000], std-[0.0000]
+PMRs: m-[31.63], std-[5.10]
+PAccs: m-[34.49], std-[6.23]
+taus: m-[-7.44], std-[14.93]
+
+#####
+
+
+#####
+
+Scores for model: 20210516_2315_pw+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210516_2315_pw+LSTM_en:
+Losses: 0.0000
+PMR: 34.69
+PAcc: 43.57
+tau: 11.16
+
+
+#####
+
+Scores for model: 20210516_2315_pw+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210516_2315_pw+LSTM_en:
+Losses: 0.0000
+PMR: 32.65
+PAcc: 34.06
+tau: -0.59
+--- Mean + std / epoch over folds: ---
+Losses: m-[0.0000], std-[0.0000]
+PMRs: m-[33.67], std-[1.02]
+PAccs: m-[38.81], std-[4.76]
+taus: m-[5.28], std-[5.87]
+
+#####
+
+
+#####
+
+Scores for model: 20210516_2348_ptr+LSTM_en
+--- Fold 1 ---
+
+After training for 1/1 epochs, scores for model 20210516_2348_ptr+LSTM_en:
+Losses: 20.0331
+PMR: 40.82
+PAcc: 44.29
+tau: 27.07
+
+
+#####
+
+Scores for model: 20210516_2348_ptr+LSTM_en
+--- Fold 2 ---
+
+After training for 1/1 epochs, scores for model 20210516_2348_ptr+LSTM_en:
+Losses: 19.8206
+PMR: 36.73
+PAcc: 41.30
+tau: 13.65
+--- Mean + std / epoch over folds: ---
+Losses: m-[19.9268], std-[0.1063]
+PMRs: m-[38.78], std-[2.04]
+PAccs: m-[42.80], std-[1.49]
+taus: m-[20.36], std-[6.71]
+
+#####

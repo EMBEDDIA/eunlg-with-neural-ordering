@@ -1,0 +1,263 @@
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': OrderedDict([('lstm.weight_ih_l0', tensor([[-0.0893, -0.0651, -0.0200,  ..., -0.1023,  0.0357, -0.0854],
+
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	50.28
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': OrderedDict([('conv_net.0.weight', tensor([[[[-0.0105, -0.0072,  0.0047,  0.0061, -0.0117, -0.0091],
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	63.68
+
+###
+
+ --- Test set scores for model: 20210420_1759_ptr+LSTM_en.pt ---
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': OrderedDict([('d0', tensor([ 0.5151,  0.2410,  0.4257,  ..., -0.1504, -0.9107,  0.9156])), ('h0', tensor([[[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+
+tau	43.82
+PMR	43.97
+PAcc 45.89
+
+###
+
+ --- Test set scores for model: 20210415_0014_pos+LSTM_en.pt ---
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': OrderedDict([('encoder.lstm.weight_ih_l0', tensor([[-0.0515, -0.0044,  0.0078,  ...,  0.0466, -0.0474, -0.0309],
+P	35.43
+R	35.43
+F1	35.43
+A	35.43
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}loss	0.0000
+tau	41.37
+PMR	41.98
+PAcc	44.64
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}loss	0.0000
+tau	18.87
+PMR	32.41
+PAcc	36.67
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}loss	0.0000
+tau	-1.53
+PMR	22.82
+PAcc	30.33
+
+###
+
+ --- Test set scores for model: random ---
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'fc.weight', 'fc.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pos'}loss	0.0000
+P	10.00
+R	10.00
+F1	10.00
+A	10.00
+
+###
+
+ --- Test set scores for model: random ---
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': ['d0', 'h0', 'c0', 'mask', 'W.weight', 'W.bias', 'encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'decoder.lstm.weight_ih_l0', 'decoder.lstm.weight_hh_l0', 'decoder.lstm.bias_ih_l0', 'decoder.lstm.bias_hh_l0', 'decoder.attention.inf', 'decoder.attention.W2_dec.weight', 'decoder.attention.W1_enc.weight', 'decoder.attention.V.weight'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'order'}loss	0.0000
+tau	0.57
+PMR	23.43
+PAcc	30.45
+
+###
+
+ --- Test set scores for model: 20210420_1759_ptr+LSTM_en.pt ---
+Test args: {'task': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PointerNet/20210420_1759_ptr+LSTM_en.pt', 'random': False}
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': ['d0', 'h0', 'c0', 'mask', 'W.weight', 'W.bias', 'encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'decoder.lstm.weight_ih_l0', 'decoder.lstm.weight_hh_l0', 'decoder.lstm.bias_ih_l0', 'decoder.lstm.bias_hh_l0', 'decoder.attention.inf', 'decoder.attention.W2_dec.weight', 'decoder.attention.W1_enc.weight', 'decoder.attention.V.weight'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'order'}
+loss	36.5776
+tau	43.82
+PMR	43.97
+PAcc	45.89
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Test args: {'task': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairLSTM/20210424_1149_pw+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.6926
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	50.28
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Test args: {'task': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairCNN/20210419_1557_pw+CNN_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.6724
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	63.68
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Test args: {'task': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairCNN/20210419_1557_pw+CNN_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.6724
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	63.68
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Test args: {'task': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairLSTM/20210424_1149_pw+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.6926
+P	50.00
+R	50.00
+F1	50.00
+A	50.00
+AP	50.28
+
+###
+
+ --- Test set scores for model: 20210420_1759_ptr+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PointerNet/20210420_1759_ptr+LSTM_en.pt', 'random': False}
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': ['d0', 'h0', 'c0', 'mask', 'W.weight', 'W.bias', 'encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'decoder.lstm.weight_ih_l0', 'decoder.lstm.weight_hh_l0', 'decoder.lstm.bias_ih_l0', 'decoder.lstm.bias_hh_l0', 'decoder.attention.inf', 'decoder.attention.W2_dec.weight', 'decoder.attention.W1_enc.weight', 'decoder.attention.V.weight'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'order'}
+loss	36.5776
+tau	43.82
+PMR	43.97
+PAcc	45.89
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairCNN/20210419_1557_pw+CNN_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.0000
+tau	41.37
+PMR	41.98
+PAcc	44.64
+
+###
+
+ --- Test set scores for model: 20210415_0014_pos+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PositionNet/20210415_0014_pos+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'fc.weight', 'fc.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pos'}
+loss	105.3059
+tau	12.79
+PMR	28.92
+PAcc	34.64
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairLSTM/20210424_1149_pw+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+loss	0.0000
+tau	18.87
+PMR	32.41
+PAcc	36.67
+
+###
+
+ --- Test set scores for model: 20210420_1759_ptr+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PointerNet/20210420_1759_ptr+LSTM_en.pt', 'random': False}
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': ['d0', 'h0', 'c0', 'mask', 'W.weight', 'W.bias', 'encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'decoder.lstm.weight_ih_l0', 'decoder.lstm.weight_hh_l0', 'decoder.lstm.bias_ih_l0', 'decoder.lstm.bias_hh_l0', 'decoder.attention.inf', 'decoder.attention.W2_dec.weight', 'decoder.attention.W1_enc.weight', 'decoder.attention.V.weight'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'order'}
+
+L: 36.5776, PMR: 43.97%, PAcc: 45.89%, tau: 0.438%
+
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairCNN/20210419_1557_pw+CNN_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+
+L: 0.0000, PMR: 41.98%, PAcc: 44.64%, tau: 0.414%
+
+
+###
+
+ --- Test set scores for model: 20210415_0014_pos+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PositionNet/20210415_0014_pos+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'fc.weight', 'fc.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pos'}
+
+L: 105.3059, PMR: 28.92%, PAcc: 34.64%, tau: 0.128%
+
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairLSTM/20210424_1149_pw+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+
+L: 0.0000, PMR: 32.41%, PAcc: 36.67%, tau: 0.189%
+
+
+###
+
+ --- Test set scores for model: 20210419_1557_pw+CNN_en.pt ---
+Test args: {'task': 'pw', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairCNN/20210419_1557_pw+CNN_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.1, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': '30', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairCNN', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': None, 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nk': ['10'], 'krn': ['Hx6'], 'pl': ['1x2'], 'str': ['1x1'], 'dil': ['1x1'], 'pad': ['0x0'], 'chl': ['1']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [64], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['conv_net.0.weight', 'conv_net.0.bias', 'fc_net.merge_fn.weight', 'fc_net.merge_fn.bias', 'fc_net.fc2.0.weight', 'fc_net.fc2.0.bias', 'fc_net.fc2.3.weight', 'fc_net.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+
+L: 0.6724, P: 50.00%, R: 50.00%, F1: 50.00%, Acc.: 50.00%, AP: 63.68%
+
+
+###
+
+ --- Test set scores for model: 20210424_1149_pw+LSTM_en.pt ---
+Test args: {'task': 'pw', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PairLSTM/20210424_1149_pw+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pw', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PairLSTM', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': BCEWithLogitsLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'nl': ['1'], 'h': ['80'], 'drop': ['0'], 'dirs': ['2'], 'nh': ['1'], 'a_drop': ['0'], 'q': ['rand']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 50, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['lstm.weight_ih_l0', 'lstm.weight_hh_l0', 'lstm.bias_ih_l0', 'lstm.bias_hh_l0', 'lstm.weight_ih_l0_reverse', 'lstm.weight_hh_l0_reverse', 'lstm.bias_ih_l0_reverse', 'lstm.bias_hh_l0_reverse', 'fc.merge_fn.weight', 'fc.merge_fn.bias', 'fc.fc2.0.weight', 'fc.fc2.0.bias', 'fc.fc2.3.weight', 'fc.fc2.3.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pw'}
+
+L: 0.6926, P: 50.00%, R: 50.00%, F1: 50.00%, Acc.: 50.00%, AP: 50.28%
+
+
+###
+
+ --- Test set scores for model: random ---
+Test args: {'task': 'order', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PointerNet/20210420_1759_ptr+LSTM_en.pt', 'random': True}
+Model args: {'task': 'order', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'sents', 'dim': 1024, 'len': 'W', 'model': 'statfi', 'lang': 'english'}, 'model': 'PointerNet', 'n_epochs': 20, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid(), 'conv': ReLU()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 5, 'model_state_dict': ['d0', 'h0', 'c0', 'mask', 'W.weight', 'W.bias', 'encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'decoder.lstm.weight_ih_l0', 'decoder.lstm.weight_hh_l0', 'decoder.lstm.bias_ih_l0', 'decoder.lstm.bias_hh_l0', 'decoder.attention.inf', 'decoder.attention.W2_dec.weight', 'decoder.attention.W1_enc.weight', 'decoder.attention.V.weight'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'order'}
+
+L: 0.0000, PMR: 23.43%, PAcc: 30.45%, tau: 0.006%
+
+
+###
+
+ --- Test set scores for model: 20210415_0014_pos+LSTM_en.pt ---
+Test args: {'task': 'pos', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PositionNet/20210415_0014_pos+LSTM_en.pt', 'random': False}
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'fc.weight', 'fc.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pos'}
+
+L: 5.3225, P: 35.43%, R: 35.43%, F1: 35.43%, Acc.: 35.43%
+
+
+###
+
+ --- Test set scores for model: random ---
+Test args: {'task': 'pos', 'test_ind_file': 'english-0.2-1-arts.txt', 'seed': 100, 'sample_pars': ['split=pars', 'sample=half'], 'model_fname': 'PositionNet/20210415_0014_pos+LSTM_en.pt', 'random': True}
+Model args: {'task': 'pos', 'dev_ratio': 0.2, 'cv_folds': 1, 'seed': None, 'test_ind_file': 'english-0.2-1-arts.txt', 'sample_pars': {'split': 'pars', 'tr-sample': 'half', 'dev-sample': 'half'}, 'plot': False, 'final': True, 'emb_pars': {'enc': 'sbert', 'type': 'tokens', 'dim': 1024, 'len': 'W', 'lang': 'english'}, 'model': 'PositionNet', 'n_epochs': 10, 'batch_size': 32, 'loss_fn': CrossEntropyLoss(), 'optim': 'adadelta', 'opt_params': ['default'], 'early_stop': 'loss', 'att': None, 'act_fns': {'fc': ReLU(), 'out': Sigmoid()}, 'model_pars': {'dirs': ['2'], 'h': ['100'], 'drop': ['0'], 'nl': ['1'], 'a_drop': ['0'], 'nh': ['1'], 'au': ['100'], 'nq': ['10'], 'seq_emb': ['1'], 'enc': ['lstm']}, 'merge': {'fn': <class 'torch.nn.modules.linear.Bilinear'>, 'dim': 100, 'pos': 0}, 'h_units': [100], 'dropout': 0.5, 'epoch': 10, 'model_state_dict': ['encoder.lstm.weight_ih_l0', 'encoder.lstm.weight_hh_l0', 'encoder.lstm.bias_ih_l0', 'encoder.lstm.bias_hh_l0', 'encoder.lstm.weight_ih_l0_reverse', 'encoder.lstm.weight_hh_l0_reverse', 'encoder.lstm.bias_ih_l0_reverse', 'encoder.lstm.bias_hh_l0_reverse', 'fc.weight', 'fc.bias'], 'optimizer_state_dict': ['state', 'param_groups'], 'model_type': 'pos'}
+
+L: 0.0000, P: 10.00%, R: 10.00%, F1: 10.00%, Acc.: 10.00%
+
+
+###
